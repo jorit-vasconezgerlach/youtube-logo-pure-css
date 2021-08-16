@@ -1,0 +1,37 @@
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #424242;
+}
+#logo {
+    height: 140px;
+    width: 200px;
+    border-radius: 44px;
+    background: #E62117;
+    position: relative;
+}
+#logo::before {
+    content: '';
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -15px;
+    border-top: 25px solid transparent;
+	border-left: 45px solid white;
+	border-bottom: 25px solid transparent;
+    position: absolute;
+}
+#logo::after {
+    content: '';
+    top: 50%;
+    left: 50%;
+    rotate: 215deg;
+    margin-top: -15px;
+    margin-left: -15px;
+    border-top: 5px solid transparent;
+	border-left: 45px solid rgba(158, 158, 158, 0.5);
+	border-bottom: 5px solid transparent;
+    position: absolute;
+    transform: skewX(-20deg);
+}
